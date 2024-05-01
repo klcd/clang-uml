@@ -1,0 +1,28 @@
+@startuml
+title Basic class diagram example
+class "A" as C_0000987634239855407298
+class C_0000987634239855407298 {
+__
+}
+class "B" as C_0000594234458687375950
+class C_0000594234458687375950 {
+__
+}
+class "C" as C_0001142499429598587507
+class C_0001142499429598587507 {
+__
+}
+class "R" as C_0001020640076473016234
+class C_0001020640076473016234 {
+__
++a : std::unique_ptr<A>
++b : std::shared_ptr<B>
++c : std::weak_ptr<C>
+}
+C_0001020640076473016234 o-- C_0000987634239855407298 : +a
+C_0001020640076473016234 --> C_0000594234458687375950 : +b
+C_0001020640076473016234 --> C_0001142499429598587507 : +c
+
+'Generated with clang-uml, version 0.5.1-14-g88f3151
+'LLVM version Ubuntu clang version 14.0.0-1ubuntu1.1
+@enduml
