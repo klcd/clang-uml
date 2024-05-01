@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+
+  clang-uml:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: clang_uml_container 
+    volumes:
+      - ./:/workspace

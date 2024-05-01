@@ -1,0 +1,32 @@
+{
+  "name": "clang uml devcontainer",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "clang-uml",
+
+  "workspaceFolder": "/workspace",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": null
+      },
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "twxs.cmake",
+        "vadimcn.vscode-lldb",
+        "cheshirekow.cmake-format",
+        "cschlosser.doxdocgen",
+        "fredericbonnet.cmake-test-adapter",
+        "jebbs.plantuml",
+        "ms-vscode.cpptools-extension-pack",
+        "eamodio.gitlens",
+        "asciidoctor.asciidoctor-vscode"
+      ]
+    }
+  },
+
+  "overrideCommand": true,
+
+  "remoteUser": "dev"
+}
